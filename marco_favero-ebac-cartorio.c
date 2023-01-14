@@ -141,7 +141,8 @@
 	printf("Escolha uma das opções:\n");
 	printf("\t1) Registrar EBACer\n");
 	printf("\t2) Procurar EBACer\n");
-	printf("\t3) Deletar cadastro de EBACer\n\n\n");
+	printf("\t3) Deletar cadastro de EBACer\n");
+	printf("\t4) Sair do sistema\n\n");
 	
 	printf("Digite o número: ");
 	scanf("%d", &numMenu); // "scanf" é tipo um input para int, que nesse caso está sendo salva na variável 'numMenu'
@@ -160,6 +161,11 @@
 			
 		case 3:
 			funcDeletar();
+			break;
+			
+		case 4:
+			printf("Você optou por sair do sistema.\n");
+			return 0;
 			break;
 		
 		default: //praticamente um ELSE
